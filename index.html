@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <label><i class="fa-solid fa-utensils"></i> Food</label>
+        <ul class="potraitScreen">
+          <li class="landscape">Home</li>
+          <li class="landscape">About</li>
+          <li class="landscape">Popular</li>
+          <li class="landscape">Contact</li>
+          <li class="landscape menu">Menu</li>
+          <li class="menu-bar"><i class="fa-solid fa-bars"></i></li>
+          <li class="x-bar"><i class="fa-solid fa-xmark"></i></li>
+        </ul>
+
+        <ul class="potrait">
+          <li>Home</li>
+          <li>About</li>
+          <li>Popular</li>
+          <li>Contact</li>
+          <li class="menu">Menu</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="head-contant">
+        <h1>
+          The Ch<span>ee</span>se Decker <br /> </h1>
+          <h2>Fastest F<span>oo</span>d For, Instant <br />
+          <span>Hunger</span> </h2>
+        
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Nam fuga nisi
+          sapiente. Nostrum, voluptatem! Facilis <br> ipsum error culpa ullam.
+          Placeat?
+        </p>
+
+        <button>Order Now</button>
+      </div>
+      <div class="img-con">
+        <img src="Img/another-removebg-preview.png" alt="" />
+      </div>
+    </main>
+
+    <script>
+      const menuBar = document.querySelector(".menu-bar");
+      const xBar = document.querySelector(".x-bar");
+      const potrait = document.querySelector(".potrait");
+
+      menuBar.addEventListener("click", () => {
+        potrait.style.display = "block";
+        menuBar.style.display = "none";
+        xBar.style.display = "block";
+      });
+      xBar.addEventListener("click", () => {
+        potrait.style.display = "none";
+        xBar.style.display = "none";
+        menuBar.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
